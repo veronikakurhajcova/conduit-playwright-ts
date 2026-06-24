@@ -11,7 +11,7 @@ Automated test suite for [Conduit RealWorld App](https://demo.realworld.show) bu
 
 ## 📁 Project Structure
 
-\```
+```
 📁 tests/
     📁 ui/
         📁 auth/
@@ -44,39 +44,39 @@ Automated test suite for [Conduit RealWorld App](https://demo.realworld.show) bu
     usersettings.ts
 📄 playwright.config.ts
 📄 .env.example
-\```
+```
 
 ## ⚙️ Setup
 
 ### 1. Clone the repository
 
-\```bash
+```bash
 git clone https://github.com/veronikakurhajcova/conduit-playwright-ts.git
 cd conduit-playwright-ts
-\```
+```
 
 ### 2. Install dependencies
 
-\```bash
+```bash
 npm install
 npx playwright install
-\```
+```
 
 ### 3. Configure environment variables
 
-\```bash
+```bash
 cp .env.example .env
-\```
+```
 
 `.env.example`:
-\```
+```
 BASE_URL=https://demo.realworld.show
 API_URL=https://api.realworld.show/api
-\```
+```
 
 ##  Running Tests
 
-\```bash
+```bash
 # Run all tests
 npx playwright test
 
@@ -90,7 +90,7 @@ npx playwright test --headed
 
 # Open HTML report
 npx playwright show-report
-\```
+```
 
 ##  Test Coverage
 
