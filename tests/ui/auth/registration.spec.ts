@@ -20,13 +20,13 @@ test.describe('Auth Suite', () => {
 
         test('[HP] - Sign up with valid credentials - should be redirected to dashboard Page', async () => {
             const user = generateUser();
-            
+
             await signUpPage.singUp(user);
             await expect(menuBar.getProfileAvatar(user.username!)).toBeVisible();
         })
 
         for (const invalidUser of invalidUsers) {
-            test(`[NEG] - Sign up with  ${invalidUser.description} - should be error displayed and remain on the home Page`, async () => {
+            test(`[NEG] - Sign up with  ${invalidUser.description} - should be error displayed and remain on the home Page ${invalidUser.isKnownBug ? ' - KNOWN BUG' : ''}`, async () => {
                 if (invalidUser.isKnownBug) test.fail();
 
                 await signUpPage.fillSignUpForm(invalidUser);
