@@ -1,5 +1,5 @@
 # Conduit Playwright Tests
-
+![Playwright Tests](https://github.com/veronikakurhajcova/conduit-playwright-ts/actions/workflows/playwright.yml/badge.svg)
 Automated test suite for [Conduit RealWorld App](https://demo.realworld.show) built with Playwright and TypeScript.
 
 ##  Tech Stack
