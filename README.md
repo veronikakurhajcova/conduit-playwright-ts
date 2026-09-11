@@ -108,7 +108,7 @@ npx playwright show-report
 - **Custom Fixtures** — `user` and `createdArticle` fixtures for test isolation
 - **API Prerequisites** — users and articles created via API before UI tests
 - **Data-driven Testing** — negative scenarios via `for...of` loops
-- **Known Bug Handling** — `test.fail()` pattern for documented bugs
+- **Known Bug Handling** — `test.fail()` pattern for documented bugs, test marked
 - **Dynamic Test Data** — Faker.js generates unique data per test run
 - **TypeScript Interfaces** — strict typing with inheritance (`InvalidUser extends User`)
 
